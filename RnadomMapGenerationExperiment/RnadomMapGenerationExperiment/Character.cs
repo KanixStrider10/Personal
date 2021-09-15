@@ -8,7 +8,7 @@ namespace RnadomMapGenerationExperiment {
         private Vector2 position;
         private int sideSize;
         
-        private int speed = 10;
+        private int speed = 4;
         private int bulletSpeed = 10;
         private int bulletSize = 10;
         private int range = 500;
@@ -45,6 +45,24 @@ namespace RnadomMapGenerationExperiment {
             }
         }
 
+        public int BulletSize {
+            get {
+                return bulletSize;
+            }
+            set {
+                bulletSize = value;
+            }
+        }
+
+        public int BulletSpeed {
+            get {
+                return bulletSpeed;
+            }
+            set {
+                bulletSpeed = value;
+            }
+        }
+
         public int FireRate {
             get {
                 return fireRate;
@@ -75,12 +93,30 @@ namespace RnadomMapGenerationExperiment {
             }
         }
 
+        public int Speed {
+            get {
+                return speed;
+            }
+            set {
+                speed = value;
+            }
+        }
+
         public int Damage {
             get {
                 return damage;
             }
             set {
                 damage = value;
+            }
+        }
+
+        public int Range {
+            get {
+                return range;
+            }
+            set {
+                range = value;
             }
         }
 

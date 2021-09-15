@@ -6,6 +6,16 @@ using System.Text;
 namespace RnadomMapGenerationExperiment {
     abstract class Pickup {
 
+        /*Pickup Types
+         *Health: Red
+         *Damage: Green
+         *FireRate: Whitish
+         *Speed: Yellow
+         *Range: Purple
+         *BulletSpeed: Light Blue
+         *BulletSize: Dark Blue
+         */
+
         private Color color;
         private Vector2 position;
 

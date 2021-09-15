@@ -4,19 +4,16 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace RnadomMapGenerationExperiment {
-    class FireRatePickup : Pickup{
-        private Color color = Color.White;
+    class SpeedPickup : Pickup {
+        private Color color = Color.Yellow;
         private Vector2 position;
 
-        public FireRatePickup(Vector2 _position) : base(_position) {
+        public SpeedPickup(Vector2 _position) : base(_position) {
             position = _position;
         }
 
         override public void UsePickup(Character player) {
-            player.FireRate -= 2;
-            if(player.FireRate < 3) {
-                player.FireRate = 3;
-            }
+            player.Speed += 2;
             player.PickupColors.Add(color);
         }
 

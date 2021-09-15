@@ -167,7 +167,7 @@ namespace RnadomMapGenerationExperiment {
 
             for(int i = 0; i < level; i++) {
                 int roomToAddPickup = rng.Next(1, rooms.Count);
-                int pickupType = rng.Next(3);
+                int pickupType = rng.Next(7);
                 switch (pickupType) {
                     case 0:
                         rooms[roomToAddPickup].AddPickup(new HealthPickup(new Vector2((1375 / 2) + (rooms[roomToAddPickup].Pickups.Count * 50), 1375 / 2)));
@@ -177,6 +177,18 @@ namespace RnadomMapGenerationExperiment {
                         break;
                     case 2:
                         rooms[roomToAddPickup].AddPickup(new FireRatePickup(new Vector2((1375 / 2) + (rooms[roomToAddPickup].Pickups.Count * 50), 1375 / 2)));
+                        break;
+                    case 3:
+                        rooms[roomToAddPickup].AddPickup(new SpeedPickup(new Vector2((1375 / 2) + (rooms[roomToAddPickup].Pickups.Count * 50), 1375 / 2)));
+                        break;
+                    case 4:
+                        rooms[roomToAddPickup].AddPickup(new RangePickup(new Vector2((1375 / 2) + (rooms[roomToAddPickup].Pickups.Count * 50), 1375 / 2)));
+                        break;
+                    case 5:
+                        rooms[roomToAddPickup].AddPickup(new BulletSizePickup(new Vector2((1375 / 2) + (rooms[roomToAddPickup].Pickups.Count * 50), 1375 / 2)));
+                        break;
+                    case 6:
+                        rooms[roomToAddPickup].AddPickup(new BulletSpeedPickup(new Vector2((1375 / 2) + (rooms[roomToAddPickup].Pickups.Count * 50), 1375 / 2)));
                         break;
                     default:
                         rooms[roomToAddPickup].AddPickup(new DamagePickup(new Vector2((1375 / 2) + (rooms[roomToAddPickup].Pickups.Count * 50), 1375 / 2)));
