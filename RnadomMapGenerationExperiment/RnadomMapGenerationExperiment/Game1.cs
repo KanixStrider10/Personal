@@ -16,7 +16,7 @@ namespace RnadomMapGenerationExperiment {
         int sideSize = 115;
         int bufferSize;
         int doorSize = 30;
-        double wallChance = .7;
+        double wallChance = .75;
         int playerSize = 30;
 
         MapMode mapState = MapMode.Map;

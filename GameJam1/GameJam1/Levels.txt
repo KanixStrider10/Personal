@@ -1,0 +1,107 @@
+﻿
+>levelNum before each level (remember start at 0 not 1)
+start any level with width height statement
+t = tile
+e = emptytile
+w = wall
+0 = mirror orientation 0
+1 = mirror orientation 1
+p = player starts here
+g = goal
+
+any notes above here
+^^^^^
+
+>0
+5 1
+p t t t g
+
+>1
+3 3
+p t t
+t w t
+t t g
+
+>2
+5 5
+e e g e e
+e e t e e
+g t t t g
+e e t e e
+e e p e e
+
+>3
+5 3
+g w t w g
+t w t w t
+t t p e 1
+
+>4
+7 7
+p t t t t t t
+t 1 t 1 t 1 t
+t t t t t g t
+t 1 t 1 t 1 t
+t t t t t t t
+t 1 t t t 1 t
+t t t g t t t
+
+>5
+9 9 
+g t t t t t 0 t g
+t e e e e e e e t
+0 e p t 0 t t e 1
+t e t t t t t e t
+t e 0 t e t 0 e t
+t e t t t t t e t
+1 e t t 0 t t e 0
+t e e e e e e e t
+g t 0 t 1 t t t g
+
+>6
+9 9
+g w 1 t t t t t 0
+1 e t t t t 0 w t
+t w t w w w t w t
+t w t w p t t w t
+t t t w t w t w t
+t w t w t w t w t
+t w t t t e 0 w t
+t w w w w w w w t
+g t t t t t t t 1
+
+>7
+7 7
+0 g 1 1 0 0 1
+1 e e g e e 0
+0 e 1 1 0 e 1
+1 e 1 p 0 e 0
+0 e 0 0 1 e 1
+1 e e e e g 0
+0 0 1 0 0 1 0
+
+>8
+9 9
+1 g e e e e e e e
+t w w w p w w w e
+t w w t t t w w e
+t w 1 t 0 t 0 w e
+t w 0 t 1 t 1 g e
+t w 1 t 0 t t w e
+t w w t t t w w e
+t w w w t w w w e 
+1 t t t t e e e e
+
+>9
+11 11
+0 t t t 0 e g t t t t
+t t t w t e t w w w t
+t t 1 t t e t t t t 1
+t w t t t e t w g w t
+1 t t t t t t t t w g
+e e e e t p t e e e e
+0 t 0 t t t t t t t 1
+t t t t t e t t t w t
+0 t t t 0 e t t 1 t t 
+t t t t t e t w t t t
+t t 0 t 0 e 1 t t t 1
